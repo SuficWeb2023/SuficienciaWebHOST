@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer Components {
+    html {
+        @apply text-gray-100;
+    }
+
+    input {
+        @apply outline-none;
+    }
+
+    .container {
+        @apply w-[90 %] md: w-[85 %];
+    }
+
+    h1 {
+        @apply font-semibold text-lg text-black;
+    }
+    
+    h2 {
+        @apply font-bold text-sm;
+    }
+
+    p {
+        @apply text-sm;
+    }
+
+    button {
+        @apply px-4 py-1 rounded-lg bg-cyan-400 text-white transition-all;
+    }
+
+}
+
+
+h1 {
+    color: gray;
+} 
+
+h2 {
+    font-weight: bold;
+    font-size:  14px;
+}
+
+
+p {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+button {
+    /*@apply px-4 py-1 rounded-lg bg-cyan-400 text-white transition-all*/
+    background-color: #cf2638;
+    border-radius: 10px;
+    color: white;
+    padding: 4px 16px 4px 16px;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+/*
+    py : Padding
+    sm: font-size:  14px
+*/
